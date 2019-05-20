@@ -7,7 +7,7 @@ endif
 get_deps:
 	@./build_deps.sh
 
-ifeq ($(USE_BORINGSSL), 0)
+ifeq ($(USE_BORINGSSL), 1)
 compile_nif: get_deps
 endif
 
